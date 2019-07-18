@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Assignment #1</title>
+</head>
+<body>
+<h1>Assignment #1</h1>
+<h2>Uriel Andreazza - 991456218</h2>
+<p>Input number between 1 and 99 to calculate the Volume of a cube</p>
+<!-- User form that calls in the servlet to Redispatch the informations to the Result JSP page that calculates the volume -->
+<form action="VolumeCalculation" method="get">
+	<table>
+			<tr>
+				<td><font face="verdana" size="2px">Width: </font></td>
+				<td><input type="text" name="width"></td>
+			</tr>
+			<tr>
+				<td><font face="verdana" size="2px">Height: </font></td>
+				<td><input type="text" name="height"></td>
+			</tr>
+			<tr>
+				<td><font face="verdana" size="2px">Depth: </font></td>
+				<td><input type="text" name="depth"></td>
+			</tr>
+	</table>
+	<input type="submit" value="Calculate!">
+</form>
+</body>
+</html>
