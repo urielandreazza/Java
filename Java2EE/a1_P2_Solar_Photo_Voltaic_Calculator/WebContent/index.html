@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Stand Alone PV Estimation</title>
+</head>
+<body>
+<h1>Assignment #1 - Part 2</h1>
+<h2>Uriel Andreazza - 991456218</h2>
+
+<!-- Form where the user inputs the information for the servlet -->
+<h2>Stand-alone PV Estimation</h2>
+	<form action ="PVCalculatorServlet" method="get">
+		<table>
+			<tr>
+				<td><font face="verdana" size="2px">PV Technology:</font></td>
+				<td>
+					<select style="width:100%" name="pvtechnology">
+						  <option value="CrSilicon">Crystalline silicon</option>
+						  <option value="cis">CIS</option>
+						  <option value="CdTe">CdTe</option>
+						  <option value="Hybrid">Hybrid</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><font face="verdana" size="2px">Enter peak PV Power</font></td>
+				<td><input type="text" name="pvPower"> WP</td>
+			</tr>
+			<tr>
+				<td><font face="verdana" size="2px">Battery Voltage</font></td>
+				<td><input type="text" name="batVolt"> V </td> 
+			</tr>
+			<tr>
+				<td><font face="verdana" size="2px">Capacity</font></td>
+				<td><input type="text" name="capacity"> Ah</td>
+			</tr>
+			<tr>
+				<td><font face="verdana" size="2px">Enter Daily consumption</font></td>
+				<td><input type="text" name="dailyCon"> Wh</td>
+			</tr>
+			<tr>
+				<td><font face="verdana" size="2px">Estimated system losses [0;100]</font></td>
+				<td><input type="text" name="estimatedsystemlosses"> %</td>
+			</tr>
+			<tr>
+				<td><font face="verdana" size="2px">Module inclination [0;90]</font></td>
+				<td><input type="text" name="incl"> deg.</td>
+			</tr>
+			<tr>
+				<td><font face="verdana" size="2px">Orientation [-180;180]</font></td>
+				<td><input type="text" name="orient"> deg</td>
+			</tr>
+		</table>
+		<input type="submit" value="Calculate"> <br>
+	</form>
+</body>
+</html>
